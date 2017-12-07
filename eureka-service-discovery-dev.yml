@@ -3,7 +3,7 @@ spring:
  application:
   name: eureka-service-discovery
 server:
- port: ${PORT:8762}
+ port: ${PORT:8761}
 eureka:
  client:
   registerWithEureka: false
