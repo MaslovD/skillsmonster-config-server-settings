@@ -1,5 +1,5 @@
 spring:
-  profiles: DEV
+  profiles: dev
   application:
     name: receiver-head-hunter
   skillsmonster:
