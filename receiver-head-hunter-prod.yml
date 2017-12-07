@@ -48,3 +48,6 @@ logging:
    controllers: DEBUG
    org.hibernate: ERROR
  file: logs/spring-boot-logging.log
+management:
+ security:
+  enabled: false
