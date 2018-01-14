@@ -39,7 +39,7 @@ eureka:
   preferIpAddress: false
   leaseRenewalIntervalInSeconds: 5
 server:
- port: 0
+ port: 8081
 debug: false
 logging:
  level:
