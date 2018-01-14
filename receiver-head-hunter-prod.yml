@@ -12,9 +12,9 @@ spring:
    version: v1
  datasource:
   driver-class-name: org.postgresql.Driver
-  url: "jdbc:postgresql://192.168.1.53:5432/skillsmonster"
+  url: "jdbc:postgresql://rumos0154:5432/skillsmonster"
   username: postgres
-  password: postgres
+  password: postgress
   testWhileIdle: true
   validationQuery: SELECT 1
  jpa:
@@ -32,7 +32,7 @@ spring:
 eureka:
  client:
   serviceUrl:
-   defaultZone: ${EUREKA_URI:http://192.168.1.51:8761/eureka}
+   defaultZone: ${EUREKA_URI:http://rumos0151:8761/eureka}
   fetchRegistry: true
   registryFetchIntervalSeconds: 5
  instance:
