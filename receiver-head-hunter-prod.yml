@@ -14,7 +14,7 @@ spring:
   driver-class-name: org.postgresql.Driver
   url: "jdbc:postgresql://rumos0154:5432/skillsmonster"
   username: postgres
-  password: postgress
+  password: postgres
   testWhileIdle: true
   validationQuery: SELECT 1
  jpa:
