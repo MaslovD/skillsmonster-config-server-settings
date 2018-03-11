@@ -22,7 +22,7 @@ spring:
   generate-ddl: true
   hibernate:
    dialect: com.masdmtr.skillsmonster.json.CustomPostgreSqlDialect
-  # ddl-auto: validate
+   ddl-auto: validate
    current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
 #  enable_lazy_load_no_trans: true
    connection:
