@@ -11,29 +11,20 @@ spring:
     api:
       version: v1
   rabbitmq:
-    host: dev.api.revolveronline.ru
-    username: worker
-    password: worker
-    port: 8082
-    virtual-host: "loc"
+    host: rumos0152
+    username: rabbitmq
+    password: rabbitmq
+    port: 5672
+    virtual-host: "/"
     concurrentConsumers: 2
     maxConcurrentConsumers: 4
-    dataloader:
+    skillsmonster:
       queue:
-        level1: data-loader-spark-level-1.queue
-        level2: data-loader-spark-level-2.queue
-        level3: data-loader-spark-level-3.queue
-        level4: data-loader-spark-level-4.queue
-        shareHolder: data-loader-spark.shareholder.queue
-        relatedParty: data-loader-spark.relatedparty.queue
+        searchResults: skillsmonster-search-results.queue
       exchange: data-loader-spark.exchange
-      routingKey: spark.loader.messages.key
-      shareHolderRoutingKey: spark.loader.shareholder.routing.key
-      relatedPartyRoutingKey: spark.loader.relatedparty.routing.key
-      companyLoadedRoutingKey: spark.loader.companyloaded.routing.key
-      resultsRoutingKey: spark.loader.results.key
-      deadLetterQueue: data-loader-spark.dead-letter.queue
-      deadLetterExchange: data-loader-spark.dead-letter.exchange   
+      routingKey: skillsmonster.routing.key      
+      deadLetterQueue: skillsmonster.dead-letter.queue
+      deadLetterExchange: skillsmonster.dead-letter.exchange   
   datasource:
     driver-class-name: org.postgresql.Driver
     url: "jdbc:postgresql://rumos0154:5432/skillsmonster"
