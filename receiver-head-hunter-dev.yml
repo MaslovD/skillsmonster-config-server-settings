@@ -4,7 +4,7 @@ spring:
     name: receiver-head-hunter
   skillsmonster:
     schedule:
-      vacancy_searcher: "0 06 * * * *"
+      vacancy_searcher: "0 08 * * * *"
       queue_updater: "*/30 * * * * *"
       vacancy_loader: "*/10 * * * * *"
     host: "https://api.hh.ru/"
