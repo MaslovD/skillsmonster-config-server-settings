@@ -11,7 +11,7 @@ spring:
     api:
       version: v1
   rabbitmq:
-    host: rumos01522
+    host: rumos0152
     username: rabbitmq
     password: rabbitmq
     port: 5672
