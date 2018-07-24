@@ -16,8 +16,8 @@ spring:
     password: rabbitmq
     port: 5672
     virtual-host: "/"
-    concurrentConsumers: 2
-    maxConcurrentConsumers: 4
+    concurrentConsumers: 1
+    maxConcurrentConsumers: 1
     skillsmonster:
       queue:
         searchResults: skillsmonster-search-results.queue
