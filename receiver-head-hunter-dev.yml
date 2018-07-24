@@ -10,6 +10,10 @@ spring:
     host: "https://api.hh.ru/"
     api:
       version: v1
+  jackson:
+   serialization:
+    WRITE_DATES_AS_TIMESTAMPS: false
+
   rabbitmq:
     host: rumos0152
     username: rabbitmq
