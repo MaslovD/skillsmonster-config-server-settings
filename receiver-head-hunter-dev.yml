@@ -38,7 +38,7 @@ spring:
     testWhileIdle: true
     validationQuery: SELECT 1
   jpa:
-    database-platform: com.masdmtr.skillsmonster.json.CustomPostgreSqlDialect
+    database-platform: com.masdmtr.skillsmonster.config.CustomPostgreSqlDialect
     generate-ddl: true
     hibernate:
       dialect: com.masdmtr.skillsmonster.json.CustomPostgreSqlDialect
